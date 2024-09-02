@@ -1,0 +1,115 @@
+.popular-products {
+  width: 100%;
+  max-width: 100%;
+  background-color: #333;
+  border-radius: 1rem;
+  overflow: hidden;
+  color: #fff;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.popular-products__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+.popular-products__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.popular-products__header {
+  background-color: #444;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #ffffffb5;
+}
+
+.popular-products__header-item {
+  padding: 12px;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.popular-products__item {
+  border-bottom: 1px solid #555;
+}
+
+.popular-products__item:last-child {
+  border-bottom: none;
+}
+
+.popular-products__icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #555;
+  border-radius: 50%;
+  position: relative;
+  left: 0.8rem;
+}
+
+.popular-products__name,
+.popular-products__category,
+.popular-products__author,
+.popular-products__price,
+.popular-products__status {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem; /* 16px */
+  color: #ffffff;
+  padding: 12px;
+  overflow-wrap: break-word;
+}
+
+.popular-products__price {
+  color: #3bcd92;
+  font-weight: 500;
+}
+
+.popular-products__status {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .popular-products__table {
+    display: block;
+  }
+
+  .popular-products__header,
+  .popular-products__item {
+    display: block;
+    width: 100%;
+  }
+
+  .popular-products__header-item,
+  .popular-products__name,
+  .popular-products__category,
+  .popular-products__author,
+  .popular-products__price,
+  .popular-products__status {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .popular-products__header-item:before,
+  .popular-products__name:before,
+  .popular-products__category:before,
+  .popular-products__author:before,
+  .popular-products__price:before,
+  .popular-products__status:before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .popular-products__icon {
+    margin-bottom: 12px;
+  }
+}

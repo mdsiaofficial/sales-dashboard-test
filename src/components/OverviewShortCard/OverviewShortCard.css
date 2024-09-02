@@ -1,0 +1,35 @@
+.statistics-cards {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.card {
+  width: 100%;
+  border-radius: 14px;
+  background-color: #333;
+  padding: 0 16px;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.card-amount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.card-comparison {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 10px;
+  color: #aaaaaaff;
+}
